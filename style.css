@@ -1,0 +1,352 @@
+/* fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* navbar css start  */
+
+.navbar {
+    min-height: 3rem;
+    height: fit-content;
+    background-color: rgb(124, 120, 120, 0.8);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0rem 2rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    text-align: center;
+}
+
+.logo img {
+    height: 8vh;
+    border-radius: 100px;
+}
+
+ul {
+    display: flex;
+}
+
+ul li {
+    margin: 0rem 1.7vw;
+}
+
+ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+
+/* navbar css end  */
+
+
+/* hero css start  */
+
+.hero {
+    flex-direction: column;
+    background-image: url(bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(60deg, #1e2022 0%, #242425 100%);
+    z-index: -1;
+    opacity: 0.4;
+}
+
+.hero>p,
+.hero>h3 {
+    /* border: 2px solid red; */
+    margin: 1% 3vw;
+    padding: 1% 3vw;
+}
+
+.hero>h3 {
+    text-transform: uppercase;
+    font-size: 23px;
+    letter-spacing: 1px;
+    font-weight: bolder;
+}
+
+.hero>p {
+    max-width: 800px;
+    width: 70vw;
+    text-align: center;
+    font-size: 17px;
+    font-weight: lighter;
+}
+
+.cla {
+    height: 35px;
+    width: 150px;
+}
+
+.cla button {
+    border: 2px solid red;
+    background-color: red;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    height: 100%;
+    width: 100%;
+}
+
+
+/* hero css end  */
+
+
+/* services css start  */
+
+.services {
+    flex-direction: column;
+}
+
+.services h3,
+.cont {
+    /* border: 2px solid red; */
+    margin: 1rem 4vw;
+}
+
+.services h3 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.services h3,
+.services p,
+.services h2 {
+    color: black;
+}
+
+.cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cont img {
+    height: 90px;
+    width: 90px;
+}
+
+.box {
+    text-align: center;
+    width: 20vw;
+    min-width: 280px;
+    height: fit-content;
+    border: 2px solid red;
+    background-color: red;
+    box-shadow: 2px 2px 2px 1px grey;
+    border-radius: 100px;
+    margin: 2rem 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover {
+    box-shadow: 1px 2px 0px 0px grey;
+}
+
+
+/* services css end  */
+
+
+/* our clients css start  */
+
+.clients {
+    flex-direction: column;
+    min-height: 50vh;
+    background: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.clients::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(80deg, #0d0d0d 100%, #242425 100%);
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.clients h3 {
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.clients h3,
+.images {
+    margin: 2rem 0;
+}
+
+.images {
+    /* border: 2px solid red; */
+    min-height: fit-content;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 70vw;
+    flex-wrap: wrap;
+}
+
+.clients img {
+    height: 100px;
+    margin: 1rem;
+}
+
+
+/* our clients css end  */
+
+
+/* contact us css start  */
+
+.contact {
+    background: url(contact.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    height: fit-content;
+    padding: 2rem 0rem;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+    z-index: 1;
+}
+
+.contact::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(80deg, #0d0d0d 100%, #242425 100%);
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.contact h3 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.contact h3,
+form {
+    margin: 1rem 0px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: 70vw;
+    max-width: 600px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 1rem 0px;
+}
+
+input,
+textarea {
+    border-radius: 10px;
+    border: none;
+    height: 1.6rem;
+    padding: 3px 9px;
+    color: black;
+}
+
+textarea {
+    height: 3rem;
+}
+
+.cla2 {
+    height: 35px;
+    border-radius: 10px;
+    width: 100%;
+    margin: 1rem;
+}
+
+.cla2 button {
+    border: 2px solid red;
+    background-color: red;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    height: 100%;
+    width: 100%;
+}
+
+
+/* contact us css end  */
+
+
+/* footer css start  */
+
+.footer {
+    height: 6vh;
+    min-height: 1rem;
+    text-align: center;
+    background-color: grey;
+}
+
+
+/* footer css end  */
+
+
+/* media queries start  */
+
+@media only screen and (max-width:557px) {
+    .navbar {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+
+/* media queries end  */
